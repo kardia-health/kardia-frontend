@@ -134,10 +134,10 @@ const Login = () => {
                     className="mb-8 text-center"
                 >
                     <h2 className="text-3xl font-bold text-gray-900 mb-2">
-                        Welcome Back
+                        Selamat Datang Kembali!
                     </h2>
                     <p className="text-gray-600">
-                        Sign in to continue your health journey
+                        Masuk ke akun Kamu untuk melanjutkan perjalananmu.
                     </p>
                 </motion.div>
 
@@ -150,7 +150,7 @@ const Login = () => {
                     <Card className="rounded-2xl shadow-xl border border-gray-200 bg-white/80 backdrop-blur-sm">
                         <CardHeader className="pb-4">
                             <CardTitle className="text-xl font-bold text-gray-900 text-center">
-                                Sign In
+                                Masuk Sekarang
                             </CardTitle>
                         </CardHeader>
                         <CardContent className="p-6 pt-0">
@@ -161,7 +161,7 @@ const Login = () => {
                                         htmlFor="email"
                                         className="text-sm font-medium text-gray-700"
                                     >
-                                        Email Address
+                                        Alamat Email
                                     </Label>
                                     <div className="relative">
                                         <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
@@ -232,7 +232,7 @@ const Login = () => {
                                             onClick={() =>
                                                 setShowPassword(!showPassword)
                                             }
-                                            className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors"
+                                            className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors cursor-pointer"
                                             disabled={isLoading}
                                         >
                                             {showPassword ? (
@@ -284,16 +284,16 @@ const Login = () => {
                                 <Button
                                     type="submit"
                                     disabled={isLoading}
-                                    className="w-full h-12 bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                                    className="w-full h-12 bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 disabled:opacity-50 cursor-pointer disabled:cursor-not-allowed"
                                 >
                                     {isLoading ? (
                                         <>
                                             <Loader2 className="h-5 w-5 mr-2 animate-spin" />
-                                            Signing In...
+                                            Proses Masuk...
                                         </>
                                     ) : (
                                         <>
-                                            Sign In
+                                            Masuk Sekarang
                                             <ArrowRight className="h-5 w-5 ml-2" />
                                         </>
                                     )}
@@ -306,7 +306,7 @@ const Login = () => {
                                     </div>
                                     <div className="relative flex justify-center text-sm">
                                         <span className="px-2 bg-white text-gray-500">
-                                            Don't have an account?
+                                            Belum punya akun?
                                         </span>
                                     </div>
                                 </div>
@@ -317,7 +317,7 @@ const Login = () => {
                                         to="/auth/register"
                                         className="text-rose-600 hover:text-rose-700 font-semibold transition-colors"
                                     >
-                                        Create a new account
+                                        Daftar Sekarang
                                     </Link>
                                 </div>
                             </form>
