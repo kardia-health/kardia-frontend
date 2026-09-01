@@ -16,7 +16,7 @@ export default defineConfig({
 		proxy: {
 			// Permintaan yang dimulai dengan /api akan diarahkan ke target
 			'/api': {
-				target: 'http://api.kardia.my.id', // Ganti dengan URL API backend Anda
+				target: 'http://api.selaras.my.id', // Ganti dengan URL API backend Anda
 				changeOrigin: true,
 				rewrite: (path) => path.replace(/^\/api/, ''), // Hapus /api dari path
 			},
